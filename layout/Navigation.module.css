@@ -1,0 +1,101 @@
+.topNav {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px 28px;
+}
+
+.navContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menuIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 16px;
+  fill: var(--Transparent, #fff);
+  background-blend-mode: multiply;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.brand {
+  color: rgba(34, 32, 46, 1);
+  align-self: stretch;
+  font: 400 24px Clash Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.navIcons {
+  align-self: stretch;
+  display: flex;
+  gap: 16px;
+  margin: auto 0;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 26px;
+  fill: var(--Transparent, #fff);
+  background-blend-mode: multiply;
+}
+
+.divider {
+  margin-top: 19px;
+  height: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mainLinks {
+  align-self: center;
+  display: flex;
+  margin-top: 20px;
+  align-items: start;
+  gap: 40px 44px;
+  color: rgba(114, 110, 141, 1);
+  justify-content: start;
+  flex-wrap: wrap;
+  font: 400 16px Satoshi, sans-serif;
+}
+
+.navLink {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navLink:hover {
+  color: rgba(42, 37, 75, 1);
+}
+
+@media (max-width: 991px) {
+  .topNav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .navContent {
+    max-width: 100%;
+    margin-right: 2px;
+  }
+
+  .divider {
+    max-width: 100%;
+  }
+
+  .mainLinks {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,101 @@
+.heroBlocks {
+  justify-content: center;
+  background: var(--White, #fff);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 60px 70px;
+}
+
+.container {
+  background: var(--Dark-Primary, #2a254b);
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+.content {
+  gap: 20px;
+  display: flex;
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  padding: 40px 0;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--White, #fff);
+  font-weight: 400;
+  margin: auto 0;
+}
+
+.title {
+  font: 32px/45px Clash Display, -apple-system, Roboto, Helvetica, sans-serif;
+  max-width: 513px;
+}
+
+.description {
+  margin-top: 196px;
+  font: 18px/27px Satoshi, sans-serif;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.heroImage {
+  aspect-ratio: 0.89;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .heroBlocks {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+
+  .textColumn,
+  .imageColumn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .textContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .description {
+    margin-top: 40px;
+  }
+
+  .heroImage {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

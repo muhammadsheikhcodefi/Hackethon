@@ -1,0 +1,74 @@
+.about {
+  width: 100%;
+}
+
+.content {
+  gap: 20px;
+  display: flex;
+}
+
+.textColumn {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+  font-weight: 400;
+  padding: 63px 80px;
+}
+
+.textContent {
+  display: flex;
+  width: 536px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  color: rgba(42, 37, 75, 1);
+  font: 24px/34px Clash Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.description {
+  color: rgba(80, 89, 119, 1);
+  margin-top: 25px;
+  font: 16px Satoshi, sans-serif;
+}
+
+.imageColumn {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.aboutImage {
+  aspect-ratio: 1.19;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .textColumn {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .textContent {
+    max-width: 100%;
+  }
+
+  .imageColumn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .aboutImage {
+    max-width: 100%;
+  }
+}
